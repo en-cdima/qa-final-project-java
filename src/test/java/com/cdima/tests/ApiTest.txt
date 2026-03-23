@@ -1,0 +1,17 @@
+Test Name: Verify GET /todos/1 returns status 200 and contains title
+
+Arrange:
+- Define endpoint: https://jsonplaceholder.typicode.com/todos/1
+- Prepare GET request
+- Define expected status code: 200
+- Define expected field: title
+
+Act:
+- Send GET request to the endpoint
+- Capture the response
+
+Assert:
+- Verify response status code is 200
+- Verify response body is not empty
+- Verify response contains the field "title"
+- Verify "title" has a non-empty value
